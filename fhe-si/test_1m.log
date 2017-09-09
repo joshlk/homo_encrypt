@@ -29,3 +29,51 @@ Computed values:
 
 Decryption time: 0.00088
 Total time: 327.183
+
+josh@localhost:~/git/fhe-si$ python ./scripts/generateRandomData.py test 2 10000
+josh@localhost:~/git/fhe-si$ ./tests/Test_Statistics_x test.dat 23 7
+================================================
+Running statistics test using Brakerski system.
+================================================
+Parameters:
+  data file: test.dat
+  logQ: 68
+  p: 23
+  generator: 7
+  block size: 8
+  num blocks: 1250
+Performing statistical analysis on 10000 values (dimension 2) in 1250 blocks, modulo prime 23
+
+True values:
+  Mean: 11103, 3533,
+  Covariance:
+  336066873391 6712653101
+  6712653101 336191107911
+
+Expected values:
+  Mean: 17, 14,
+  N: 18
+
+  Covariance:
+  21 15
+  15 18
+
+  N^2: 2
+
+Setup time: 0.008577
+Batch time: 0.056004
+Encryption time: 1.26926
+Computation time: 1.17775
+
+Computed values:
+  Mean: [17], [14],
+  N: [18]
+
+  Covariance:
+[21] [15]
+[15] [18]
+
+  N^2: [2]
+
+Decryption time: 0.001742
+Total time: 2.51377
