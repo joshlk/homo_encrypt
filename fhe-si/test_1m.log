@@ -1,0 +1,31 @@
+josh@localhost:~/git/fhe-si$ python ./scripts/generateRandomData.py test 2 1000000
+josh@localhost:~/git/fhe-si$ ./tests/Test_Regression_x test.dat 23 7
+================================================
+Running regression tests using Brakerski system.
+================================================
+Parameters:
+  data file: test.dat
+  logQ: 74
+  p: 23
+  generator: 7
+  block size: 8
+  num blocks: 125000
+Running 2-dimensional regression on 1000000 datapoints in 125000 blocks, modulo prime 23
+Expected values:
+  theta[0] = 14
+  theta[1] = 12
+  Determinant: 0
+
+
+Setup time: 0.197791
+Batch time: 9.27166
+Encryption time: 142.734
+Regression time: 174.978
+
+Computed values:
+  theta[0] = [14]
+  theta[1] = [12]
+  Determinant: []
+
+Decryption time: 0.00088
+Total time: 327.183
