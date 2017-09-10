@@ -6,7 +6,7 @@ RUN apt-get install git
 #RUN apt-get install libgmp3-dev
 
 # Install NTL v6
-RUN wget ttp://www.shoup.net/ntl/ntl-6.0.0.tar.gz
+RUN wget http://www.shoup.net/ntl/ntl-6.0.0.tar.gz
 RUN tar xfs ntl-6.0.0.tar.gz
 RUN cd ntl-6.0.0/src/
 RUN ./configure
